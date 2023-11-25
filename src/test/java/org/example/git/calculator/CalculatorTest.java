@@ -42,6 +42,12 @@ public class CalculatorTest {
         c.timeOut(100);
     }
 
+    @Test
+    public void given_two_integers_when_multiplication_then_ok(){
+        System.out.println("Test 5");
+        assertEquals(30, c.multiplication(10,3));
+    }
+
     @After
     public void tearDown(){
         System.out.println("tearDown()");
